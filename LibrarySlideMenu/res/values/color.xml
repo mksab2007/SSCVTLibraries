@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name = "menu_background">#3C5B6F</color>
+    <color name = "menu_item_default">#3C5B6F</color>
+    <color name = "menu_item_selected">#113249</color>
+    <color name = "menu_item_pressed">#A9C9E5</color>
+    
+</resources>

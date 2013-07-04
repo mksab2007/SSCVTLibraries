@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/menu_linear_layout"
+        android:layout_width="180dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:background="@color/menu_background"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/title_linear_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical" >
+
+            <TextView
+                android:id="@+id/menu_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="القائمة"
+                android:textColor="#FFFFFF"
+                android:textSize="26sp"/>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/menu_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="0dip" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/menu_linear_layout" >
+    </FrameLayout>
+
+</RelativeLayout>
